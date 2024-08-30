@@ -90,6 +90,13 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     debug.sf.frame_rate_multiple_threshold=60 \
     ro.surface_flinger.enable_frame_rate_override=false
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.infinity.codename=$(INFINITY_CODENAME) \
+    ro.infinity.soc=$(INFINITY_SOC) \
+    ro.infinity.battery=$(INFINITY_BATTERY) \
+    ro.infinity.display=$(INFINITY_DISPLAY) \
+    ro.infinity.camera=$(INFINITY_CAMERA)
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.sip.voip.xml
